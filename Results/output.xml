@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.8.5 on win32)" generated="20220409 17:34:01.687" rpa="false" schemaversion="3">
+<suite id="s1" name="Hms" source="C:\Users\welcome\PycharmProjects\RobotFrameworkHMS\Tests\HMS\functionalTestSuite\hms.robot">
+<test id="s1-t1" name="Admin Login" line="11">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220409 17:34:02.030" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:5000/'.</msg>
+<msg timestamp="20220409 17:34:10.781" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+<msg timestamp="20220409 17:34:10.786" level="FAIL">WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=100.0.4896.75)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00857413+2389011]
+	Ordinal0 [0x007E9F61+1941345]
+	Ordinal0 [0x006DC658+837208]
+	Ordinal0 [0x006CE87E+780414]
+	Ordinal0 [0x006CE46F+779375]
+	Ordinal0 [0x006CDA86+776838]
+	Ordinal0 [0x006CC995+772501]
+	Ordinal0 [0x006CCF98+774040]
+	Ordinal0 [0x006CCF28+773928]
+	Ordinal0 [0x006D2C56+797782]
+	Ordinal0 [0x006D2E99+798361]
+	Ordinal0 [0x006CE16D+778605]
+	Ordinal0 [0x006CE685+779909]
+	Ordinal0 [0x006CE46F+779375]
+	Ordinal0 [0x006CDA86+776838]
+	Ordinal0 [0x006CC995+772501]
+	Ordinal0 [0x006CCF98+774040]
+	Ordinal0 [0x006D8C20+822304]
+	Ordinal0 [0x006CE27D+778877]
+	Ordinal0 [0x006CEE3D+781885]
+	Ordinal0 [0x006CE48A+779402]
+	Ordinal0 [0x006CDA86+776838]
+	Ordinal0 [0x006CC995+772501]
+	Ordinal0 [0x006CCE6D+773741]
+	Ordinal0 [0x006DDE5A+843354]
+	Ordinal0 [0x007349BD+1198525]
+	Ordinal0 [0x0072414C+1130828]
+	Ordinal0 [0x00734302+1196802]
+	Ordinal0 [0x00723F66+1130342]
+	Ordinal0 [0x006FE546+976198]
+	Ordinal0 [0x006FF456+980054]
+	GetHandleVerifier [0x00A09632+1727522]
+	GetHandleVerifier [0x00ABBA4D+2457661]
+	GetHandleVerifier [0x008EEB81+569713]
+	GetHandleVerifier [0x008EDD76+566118]
+	Ordinal0 [0x007F0B2B+1968939]
+	Ordinal0 [0x007F5988+1989000]
+	Ordinal0 [0x007F5A75+1989237]
+	Ordinal0 [0x007FECB1+2026673]
+	BaseThreadInitThunk [0x7684FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77977A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77977A4E+238]
+</msg>
+<status status="FAIL" starttime="20220409 17:34:02.030" endtime="20220409 17:34:10.987"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20220409 17:34:10.989" endtime="20220409 17:34:10.989"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:username</arg>
+<arg>admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 17:34:10.990" endtime="20220409 17:34:10.990"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 17:34:10.991" endtime="20220409 17:34:10.991"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:pass</arg>
+<arg>12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 17:34:10.993" endtime="20220409 17:34:10.993"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 17:34:10.994" endtime="20220409 17:34:10.995"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//html/body/div/div/form/table/tbody/tr[3]/td[2]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 17:34:10.996" endtime="20220409 17:34:10.996"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 17:34:10.996" endtime="20220409 17:34:10.996"/>
+</kw>
+<doc>admin login</doc>
+<tag>Staff</tag>
+<status status="FAIL" starttime="20220409 17:34:02.029" endtime="20220409 17:34:10.998">WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=100.0.4896.75)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00857413+2389011]
+	Ordinal0 [0x007E9F61+1941345]
+	Ordinal0 [0x006DC658+837208]
+	Ordinal0 [0x006CE87E+780414]
+	Ordinal0 [0x006CE46F+779375]
+	Ordinal0 [0x006CDA86+776838]
+	Ordinal0 [0x006CC995+772501]
+	Ordinal0 [0x006CCF98+774040]
+	Ordinal0 [0x006CCF28+773928]
+	Ordinal0 [0x006D2C56+797782]
+	Ordinal0 [0x006D2E99+798361]
+	Ordinal0 [0x006CE16D+778605]
+	Ordinal0 [0x006CE685+779909]
+	Ordinal0 [0x006CE46F+779375]
+	Ordinal0 [0x006CDA86+776838]
+    [ Message content over the limit has been removed. ]
+	Ordinal0 [0x006CC995+772501]
+	Ordinal0 [0x006CCE6D+773741]
+	Ordinal0 [0x006DDE5A+843354]
+	Ordinal0 [0x007349BD+1198525]
+	Ordinal0 [0x0072414C+1130828]
+	Ordinal0 [0x00734302+1196802]
+	Ordinal0 [0x00723F66+1130342]
+	Ordinal0 [0x006FE546+976198]
+	Ordinal0 [0x006FF456+980054]
+	GetHandleVerifier [0x00A09632+1727522]
+	GetHandleVerifier [0x00ABBA4D+2457661]
+	GetHandleVerifier [0x008EEB81+569713]
+	GetHandleVerifier [0x008EDD76+566118]
+	Ordinal0 [0x007F0B2B+1968939]
+	Ordinal0 [0x007F5988+1989000]
+	Ordinal0 [0x007F5A75+1989237]
+	Ordinal0 [0x007FECB1+2026673]
+	BaseThreadInitThunk [0x7684FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77977A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77977A4E+238]</status>
+</test>
+<test id="s1-t2" name="Registration page" line="22">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:name</arg>
+<arg>Bibhu Kumar</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" starttime="20220409 17:34:11.018" endtime="20220409 17:34:11.019"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 17:34:11.020" endtime="20220409 17:34:11.020"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:mobno</arg>
+<arg>9471408991</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 17:34:11.020" endtime="20220409 17:34:11.021"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 17:34:11.021" endtime="20220409 17:34:11.021"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:age</arg>
+<arg>22</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 17:34:11.022" endtime="20220409 17:34:11.022"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 17:34:11.022" endtime="20220409 17:34:11.022"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:add</arg>
+<arg>Mumbai</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 17:34:11.023" endtime="20220409 17:34:11.023"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 17:34:11.024" endtime="20220409 17:34:11.024"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:dob</arg>
+<arg>04-04-1998</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 17:34:11.024" endtime="20220409 17:34:11.024"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 17:34:11.027" endtime="20220409 17:34:11.027"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:place</arg>
+<arg>Mumbai</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 17:34:11.028" endtime="20220409 17:34:11.028"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 17:34:11.029" endtime="20220409 17:34:11.029"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:pin</arg>
+<arg>123476</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 17:34:11.029" endtime="20220409 17:34:11.029"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 17:34:11.030" endtime="20220409 17:34:11.030"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//html/body/div/div/form/table/tbody/tr[8]/td[2]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 17:34:11.031" endtime="20220409 17:34:11.031"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 17:34:11.031" endtime="20220409 17:34:11.031"/>
+</kw>
+<doc>Register patient</doc>
+<tag>Patient</tag>
+<status status="FAIL" starttime="20220409 17:34:11.017" endtime="20220409 17:34:11.032">Execution terminated by signal</status>
+</test>
+<test id="s1-t3" name="Search page" line="41">
+<doc>search patient</doc>
+<tag>robot:exit</tag>
+<tag>staff</tag>
+<status status="FAIL" starttime="20220409 17:34:11.034" endtime="20220409 17:34:11.036">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t4" name="Delete page" line="50">
+<doc>delete patient</doc>
+<tag>robot:exit</tag>
+<tag>staff</tag>
+<status status="FAIL" starttime="20220409 17:34:11.038" endtime="20220409 17:34:11.040">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t5" name="Update page" line="59">
+<doc>update patient</doc>
+<tag>robot:exit</tag>
+<tag>staff</tag>
+<status status="FAIL" starttime="20220409 17:34:11.042" endtime="20220409 17:34:11.044">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20220409 17:34:01.690" endtime="20220409 17:34:11.047"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="2" skip="0" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
+<stat pass="0" fail="1" skip="0">Patient</stat>
+<stat pass="0" fail="4" skip="0">Staff</stat>
+</tag>
+<suite>
+<stat pass="0" fail="5" skip="0" id="s1" name="Hms">Hms</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220409 17:34:10.781" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+</errors>
+</robot>
